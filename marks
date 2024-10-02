@@ -1,0 +1,117 @@
+O uso de marks é uma maneira de definir posições no texto que se deseja retornar com frequência.
+
+ma -> Define uma mark na tecla a. Onde a posição é definida pela localização atual do cursor.
+'a -> Move o cursor para o primeiro caractere não-vazio da linha onde foi definida a mark. 
+`a -> Move o cursor para a coluna e linha especificados pela mark.
+d'a -> Remove tudo da posição atual do cursor até a mark.
+:marks -> Mostra todas as marks existentes.
+:marks {tecla_da_mark} -> Mostra uma mark de uma tecla.
+:delm {tecla_da_mark} -> Remove a mark.
+
+
+
+
+
+
+
+
+
+1. Marque essa posição com a tecla 'a'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Marque essa posição com a tecla 'b'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. Marque essa posição com a tecla 'c'.

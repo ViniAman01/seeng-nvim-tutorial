@@ -1,0 +1,56 @@
+-> Regex é uma abreviação para Regular Expressions (Expressões regulares), ela permite realizar ações
+sobre padrões específicos de texto, como por exemplo buscas e substituições. 
+
+-> Para realizar uma pesquisa pressione a tecla {/} no modo normal, para navegar pelas ocorrências utilizar {n} ou {N}.
+
+-> Para realizar substituições utilize o comando :%s/{alvo}/{substituto}/gc então pressione {y} 
+para confirmar a substituição, ou {n} para negar e ir para a próxima ocorrência do alvo.
+
+1. Use a funcionalidade de pesquisa para encontrar a palavra "texto":
+
+text texto caderno folha
+
+2. Use a funcionalidade de substituição para trocar "moon" por "lua":
+
+moon lua moon lua moon moon  
+
+1. Use a funcionalidade de pesquisa com a seguinte expressão regular:
+
+\<t\w*a\>
+
+tecla tela telha troca
+
+Explicação: '\<' '\>' '\w' são metacaracteres que auxiliam na criação da expressão regular, '\<' e '\>' indicam 
+o começo e o fim de uma palavra, '\w' indica que naquela posição qualquer caractere de a-z, A-Z, 0-9 e _ (underscore)
+podem aparecer, o '*' permite que tenham várias ocorrências de \w.
+
+2. Use a funcionalidade de pesquisa com a seguinte expressão regular:
+
+\<[lL]\w*[oO]\>
+
+livro Lago leaO LobO
+
+Explicação: [lL] indica que a palavra pode iniciar tanto com 'l' minusculo quando 'L' maiusculo, mesma lógica
+para [oO], só que no final da palavra.
+
+
+3. Use o modo visual para selecionar o texto, após isso use o modo de comando para realizar uma substituição 
+usando a seguinte regex:
+
+/'\(.*\)'/if char == '\1'
+
+Explicação: procuramos por ocorrências de aspas simples, depois usamos '\(' e '\)' para capturar o que está
+dentro das aspas, dessa forma podemos usá-lo posteriormente com '\1'
+
+'A'
+'B'
+'C'
+'D'
+'E'
+'F'
+'G'
+'H'
+'I'
+'J'
+'K'
+'L'
